@@ -1,5 +1,12 @@
 function findShortestString(arr) {
-  // type your code here
+  let shortestString = arr[0]
+  arr.forEach(element => {
+    if (element.length < shortestString.length) {
+      shortestString = element
+    }
+  });
+
+  return shortestString
 }
 
 if (require.main === module) {
